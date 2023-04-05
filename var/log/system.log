@@ -1,0 +1,546 @@
+[2023-04-04T08:38:32.584821+00:00] main.ERROR: Parameter validation failed
+#0 /var/www/html/magento2./vendor/symfony/console/Command/Command.php(264): Magento\Setup\Console\Command\InstallCommand->initialize()
+#1 /var/www/html/magento2./vendor/symfony/console/Application.php(1040): Symfony\Component\Console\Command\Command->run()
+#2 /var/www/html/magento2./vendor/symfony/console/Application.php(301): Symfony\Component\Console\Application->doRunCommand()
+#3 /var/www/html/magento2./vendor/magento/framework/Console/Cli.php(116): Symfony\Component\Console\Application->doRun()
+#4 /var/www/html/magento2./vendor/symfony/console/Application.php(171): Magento\Framework\Console\Cli->doRun()
+#5 /var/www/html/magento2./bin/magento(23): Symfony\Component\Console\Application->run()
+#6 {main} [] []
+[2023-04-04T08:38:56.091965+00:00] main.ERROR: Parameter validation failed
+#0 /var/www/html/magento2./vendor/symfony/console/Command/Command.php(264): Magento\Setup\Console\Command\InstallCommand->initialize()
+#1 /var/www/html/magento2./vendor/symfony/console/Application.php(1040): Symfony\Component\Console\Command\Command->run()
+#2 /var/www/html/magento2./vendor/symfony/console/Application.php(301): Symfony\Component\Console\Application->doRunCommand()
+#3 /var/www/html/magento2./vendor/magento/framework/Console/Cli.php(116): Symfony\Component\Console\Application->doRun()
+#4 /var/www/html/magento2./vendor/symfony/console/Application.php(171): Magento\Framework\Console\Cli->doRun()
+#5 /var/www/html/magento2./bin/magento(23): Symfony\Component\Console\Application->run()
+#6 {main} [] []
+[2023-04-04T10:10:43.784905+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Store/Console/Command/StoreListCommand/.
+Class Magento\Store\Console\Command\StoreListCommand\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-04T10:10:43.793209+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/Mview/.
+Class Magento\Framework\Mview\ViewFactory generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-04T10:11:54.747951+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Store/Console/Command/StoreListCommand/.
+Class Magento\Store\Console\Command\StoreListCommand\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-04T10:11:54.750667+00:00] main.ERROR: There are no commands defined in the "sampledata" namespace.
+#0 /var/www/html/magento2./vendor/symfony/console/Application.php(701): Symfony\Component\Console\Application->findNamespace()
+#1 /var/www/html/magento2./vendor/symfony/console/Application.php(259): Symfony\Component\Console\Application->find()
+#2 /var/www/html/magento2./vendor/magento/framework/Console/Cli.php(116): Symfony\Component\Console\Application->doRun()
+#3 /var/www/html/magento2./vendor/symfony/console/Application.php(171): Magento\Framework\Console\Cli->doRun()
+#4 /var/www/html/magento2./bin/magento(23): Symfony\Component\Console\Application->run()
+#5 {main} [] []
+[2023-04-04T10:12:04.795357+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Store/Console/Command/StoreListCommand/.
+Class Magento\Store\Console\Command\StoreListCommand\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-04T10:12:04.799980+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/Mview/.
+Class Magento\Framework\Mview\ViewFactory generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-04T10:13:00.047048+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Indexer/Model/Indexer/.
+Class Magento\Indexer\Model\Indexer\StateFactory generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-04T10:13:00.055962+00:00] main.CRITICAL: Exception message: Impossible to process constructor argument Parameter #4 [ <required> Magento\Indexer\Model\Indexer\StateFactory $stateFactory ] of Magento\Indexer\Model\Indexer class
+Trace: <pre>#1 Magento\Framework\ObjectManager\Definition\Runtime->getParameters() called at [vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php:48]
+#2 Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create() called at [vendor/magento/framework/ObjectManager/ObjectManager.php:56]
+#3 Magento\Framework\ObjectManager\ObjectManager->create() called at [vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:172]
+#4 Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument() called at [vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:276]
+#5 Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument() called at [vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:239]
+#6 Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime() called at [vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php:34]
+#7 Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments() called at [vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php:59]
+#8 Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create() called at [vendor/magento/framework/ObjectManager/ObjectManager.php:56]
+#9 Magento\Framework\ObjectManager\ObjectManager->create() called at [vendor/magento/framework/Indexer/IndexerRegistry.php:42]
+#10 Magento\Framework\Indexer\IndexerRegistry->get() called at [vendor/magento/module-customer/Model/Customer.php:321]
+#11 Magento\Customer\Model\Customer->getIndexer() called at [vendor/magento/module-customer/Model/Customer.php:1099]
+#12 Magento\Customer\Model\Customer->afterSave() called at [generated/code/Magento/Customer/Model/Customer/Interceptor.php:455]
+#13 Magento\Customer\Model\Customer\Interceptor->afterSave() called at [vendor/magento/module-eav/Model/Entity/VersionControl/AbstractEntity.php:94]
+#14 Magento\Eav\Model\Entity\VersionControl\AbstractEntity->save() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#15 Magento\Customer\Model\ResourceModel\Customer\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#16 Magento\Customer\Model\ResourceModel\Customer\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-checkout/Model/Plugin/RecollectQuoteOnCustomerGroupChange.php:77]
+#17 Magento\Checkout\Model\Plugin\RecollectQuoteOnCustomerGroupChange->aroundSave() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#18 Magento\Customer\Model\ResourceModel\Customer\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#19 Magento\Customer\Model\ResourceModel\Customer\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Model/ResourceModel/Customer/Interceptor.php:104]
+#20 Magento\Customer\Model\ResourceModel\Customer\Interceptor->save() called at [vendor/magento/framework/Model/AbstractModel.php:663]
+#21 Magento\Framework\Model\AbstractModel->save() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#22 Magento\Customer\Model\Customer\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#23 Magento\Customer\Model\Customer\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#24 Magento\Customer\Model\Customer\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Model/Customer/Interceptor.php:779]
+#25 Magento\Customer\Model\Customer\Interceptor->save() called at [vendor/magento/module-customer/Model/ResourceModel/CustomerRepository.php:257]
+#26 Magento\Customer\Model\ResourceModel\CustomerRepository->save() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#27 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#28 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-customer/Model/Plugin/CustomerRepository/TransactionWrapper.php:44]
+#29 Magento\Customer\Model\Plugin\CustomerRepository\TransactionWrapper->aroundSave() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#30 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#31 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Model/ResourceModel/CustomerRepository/Interceptor.php:23]
+#32 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->save() called at [vendor/magento/module-customer/Model/AccountManagement.php:952]
+#33 Magento\Customer\Model\AccountManagement->createAccountWithPasswordHash() called at [generated/code/Magento/Customer/Model/AccountManagement/Interceptor.php:104]
+#34 Magento\Customer\Model\AccountManagement\Interceptor->createAccountWithPasswordHash() called at [vendor/magento/module-customer/Model/AccountManagement.php:899]
+#35 Magento\Customer\Model\AccountManagement->createAccount() called at [generated/code/Magento/Customer/Model/AccountManagement/Interceptor.php:95]
+#36 Magento\Customer\Model\AccountManagement\Interceptor->createAccount() called at [vendor/magento/module-customer/Controller/Account/CreatePost.php:380]
+#37 Magento\Customer\Controller\Account\CreatePost->execute() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#38 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#39 Magento\Customer\Controller\Account\CreatePost\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-customer/Controller/Plugin/Account.php:64]
+#40 Magento\Customer\Controller\Plugin\Account->aroundExecute() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#41 Magento\Customer\Controller\Account\CreatePost\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#42 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Controller/Account/CreatePost/Interceptor.php:41]
+#43 Magento\Customer\Controller\Account\CreatePost\Interceptor->execute() called at [vendor/magento/framework/App/Action/Action.php:111]
+#44 Magento\Framework\App\Action\Action->dispatch() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#45 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#46 Magento\Customer\Controller\Account\CreatePost\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#47 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Controller/Account/CreatePost/Interceptor.php:50]
+#48 Magento\Customer\Controller\Account\CreatePost\Interceptor->dispatch() called at [vendor/magento/framework/App/FrontController.php:245]
+#49 Magento\Framework\App\FrontController->getActionResponse() called at [vendor/magento/framework/App/FrontController.php:212]
+#50 Magento\Framework\App\FrontController->processRequest() called at [vendor/magento/framework/App/FrontController.php:147]
+#51 Magento\Framework\App\FrontController->dispatch() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#52 Magento\Framework\App\FrontController\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#53 Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php:99]
+#54 Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#55 Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php:75]
+#56 Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#57 Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#58 Magento\Framework\App\FrontController\Interceptor->___callPlugins() called at [generated/code/Magento/Framework/App/FrontController/Interceptor.php:23]
+#59 Magento\Framework\App\FrontController\Interceptor->dispatch() called at [vendor/magento/framework/App/Http.php:116]
+#60 Magento\Framework\App\Http->launch() called at [generated/code/Magento/Framework/App/Http/Interceptor.php:23]
+#61 Magento\Framework\App\Http\Interceptor->launch() called at [vendor/magento/framework/App/Bootstrap.php:264]
+#62 Magento\Framework\App\Bootstrap->run() called at [pub/index.php:30]
+</pre> [] []
+[2023-04-04T10:13:27.708741+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Indexer/Model/Indexer/.
+Class Magento\Indexer\Model\Indexer\StateFactory generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-04T10:13:27.717300+00:00] main.CRITICAL: Exception message: Impossible to process constructor argument Parameter #4 [ <required> Magento\Indexer\Model\Indexer\StateFactory $stateFactory ] of Magento\Indexer\Model\Indexer class
+Trace: <pre>#1 Magento\Framework\ObjectManager\Definition\Runtime->getParameters() called at [vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php:48]
+#2 Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create() called at [vendor/magento/framework/ObjectManager/ObjectManager.php:56]
+#3 Magento\Framework\ObjectManager\ObjectManager->create() called at [vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:172]
+#4 Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument() called at [vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:276]
+#5 Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument() called at [vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:239]
+#6 Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime() called at [vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php:34]
+#7 Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments() called at [vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php:59]
+#8 Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create() called at [vendor/magento/framework/ObjectManager/ObjectManager.php:56]
+#9 Magento\Framework\ObjectManager\ObjectManager->create() called at [vendor/magento/framework/Indexer/IndexerRegistry.php:42]
+#10 Magento\Framework\Indexer\IndexerRegistry->get() called at [vendor/magento/module-customer/Model/Customer.php:321]
+#11 Magento\Customer\Model\Customer->getIndexer() called at [vendor/magento/module-customer/Model/Customer.php:1099]
+#12 Magento\Customer\Model\Customer->afterSave() called at [generated/code/Magento/Customer/Model/Customer/Interceptor.php:455]
+#13 Magento\Customer\Model\Customer\Interceptor->afterSave() called at [vendor/magento/module-eav/Model/Entity/VersionControl/AbstractEntity.php:94]
+#14 Magento\Eav\Model\Entity\VersionControl\AbstractEntity->save() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#15 Magento\Customer\Model\ResourceModel\Customer\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#16 Magento\Customer\Model\ResourceModel\Customer\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-checkout/Model/Plugin/RecollectQuoteOnCustomerGroupChange.php:77]
+#17 Magento\Checkout\Model\Plugin\RecollectQuoteOnCustomerGroupChange->aroundSave() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#18 Magento\Customer\Model\ResourceModel\Customer\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#19 Magento\Customer\Model\ResourceModel\Customer\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Model/ResourceModel/Customer/Interceptor.php:104]
+#20 Magento\Customer\Model\ResourceModel\Customer\Interceptor->save() called at [vendor/magento/framework/Model/AbstractModel.php:663]
+#21 Magento\Framework\Model\AbstractModel->save() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#22 Magento\Customer\Model\Customer\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#23 Magento\Customer\Model\Customer\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#24 Magento\Customer\Model\Customer\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Model/Customer/Interceptor.php:779]
+#25 Magento\Customer\Model\Customer\Interceptor->save() called at [vendor/magento/module-customer/Model/ResourceModel/CustomerRepository.php:257]
+#26 Magento\Customer\Model\ResourceModel\CustomerRepository->save() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#27 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#28 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-customer/Model/Plugin/CustomerRepository/TransactionWrapper.php:44]
+#29 Magento\Customer\Model\Plugin\CustomerRepository\TransactionWrapper->aroundSave() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#30 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#31 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Model/ResourceModel/CustomerRepository/Interceptor.php:23]
+#32 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->save() called at [vendor/magento/module-customer/Model/AccountManagement.php:952]
+#33 Magento\Customer\Model\AccountManagement->createAccountWithPasswordHash() called at [generated/code/Magento/Customer/Model/AccountManagement/Interceptor.php:104]
+#34 Magento\Customer\Model\AccountManagement\Interceptor->createAccountWithPasswordHash() called at [vendor/magento/module-customer/Model/AccountManagement.php:899]
+#35 Magento\Customer\Model\AccountManagement->createAccount() called at [generated/code/Magento/Customer/Model/AccountManagement/Interceptor.php:95]
+#36 Magento\Customer\Model\AccountManagement\Interceptor->createAccount() called at [vendor/magento/module-customer/Controller/Account/CreatePost.php:380]
+#37 Magento\Customer\Controller\Account\CreatePost->execute() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#38 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#39 Magento\Customer\Controller\Account\CreatePost\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-customer/Controller/Plugin/Account.php:64]
+#40 Magento\Customer\Controller\Plugin\Account->aroundExecute() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#41 Magento\Customer\Controller\Account\CreatePost\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#42 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Controller/Account/CreatePost/Interceptor.php:41]
+#43 Magento\Customer\Controller\Account\CreatePost\Interceptor->execute() called at [vendor/magento/framework/App/Action/Action.php:111]
+#44 Magento\Framework\App\Action\Action->dispatch() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#45 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#46 Magento\Customer\Controller\Account\CreatePost\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#47 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Controller/Account/CreatePost/Interceptor.php:50]
+#48 Magento\Customer\Controller\Account\CreatePost\Interceptor->dispatch() called at [vendor/magento/framework/App/FrontController.php:245]
+#49 Magento\Framework\App\FrontController->getActionResponse() called at [vendor/magento/framework/App/FrontController.php:212]
+#50 Magento\Framework\App\FrontController->processRequest() called at [vendor/magento/framework/App/FrontController.php:147]
+#51 Magento\Framework\App\FrontController->dispatch() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#52 Magento\Framework\App\FrontController\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#53 Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php:99]
+#54 Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#55 Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php:75]
+#56 Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#57 Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#58 Magento\Framework\App\FrontController\Interceptor->___callPlugins() called at [generated/code/Magento/Framework/App/FrontController/Interceptor.php:23]
+#59 Magento\Framework\App\FrontController\Interceptor->dispatch() called at [vendor/magento/framework/App/Http.php:116]
+#60 Magento\Framework\App\Http->launch() called at [generated/code/Magento/Framework/App/Http/Interceptor.php:23]
+#61 Magento\Framework\App\Http\Interceptor->launch() called at [vendor/magento/framework/App/Bootstrap.php:264]
+#62 Magento\Framework\App\Bootstrap->run() called at [pub/index.php:30]
+</pre> [] []
+[2023-04-04T10:16:07.636531+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Indexer/Model/Indexer/.
+Class Magento\Indexer\Model\Indexer\StateFactory generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-04T10:16:07.648017+00:00] main.CRITICAL: Exception message: Impossible to process constructor argument Parameter #4 [ <required> Magento\Indexer\Model\Indexer\StateFactory $stateFactory ] of Magento\Indexer\Model\Indexer class
+Trace: <pre>#1 Magento\Framework\ObjectManager\Definition\Runtime->getParameters() called at [vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php:48]
+#2 Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create() called at [vendor/magento/framework/ObjectManager/ObjectManager.php:56]
+#3 Magento\Framework\ObjectManager\ObjectManager->create() called at [vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:172]
+#4 Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument() called at [vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:276]
+#5 Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument() called at [vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:239]
+#6 Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime() called at [vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php:34]
+#7 Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments() called at [vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php:59]
+#8 Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create() called at [vendor/magento/framework/ObjectManager/ObjectManager.php:56]
+#9 Magento\Framework\ObjectManager\ObjectManager->create() called at [vendor/magento/framework/Indexer/IndexerRegistry.php:42]
+#10 Magento\Framework\Indexer\IndexerRegistry->get() called at [vendor/magento/module-customer/Model/Customer.php:321]
+#11 Magento\Customer\Model\Customer->getIndexer() called at [vendor/magento/module-customer/Model/Customer.php:1099]
+#12 Magento\Customer\Model\Customer->afterSave() called at [generated/code/Magento/Customer/Model/Customer/Interceptor.php:455]
+#13 Magento\Customer\Model\Customer\Interceptor->afterSave() called at [vendor/magento/module-eav/Model/Entity/VersionControl/AbstractEntity.php:94]
+#14 Magento\Eav\Model\Entity\VersionControl\AbstractEntity->save() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#15 Magento\Customer\Model\ResourceModel\Customer\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#16 Magento\Customer\Model\ResourceModel\Customer\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-checkout/Model/Plugin/RecollectQuoteOnCustomerGroupChange.php:77]
+#17 Magento\Checkout\Model\Plugin\RecollectQuoteOnCustomerGroupChange->aroundSave() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#18 Magento\Customer\Model\ResourceModel\Customer\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#19 Magento\Customer\Model\ResourceModel\Customer\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Model/ResourceModel/Customer/Interceptor.php:104]
+#20 Magento\Customer\Model\ResourceModel\Customer\Interceptor->save() called at [vendor/magento/framework/Model/AbstractModel.php:663]
+#21 Magento\Framework\Model\AbstractModel->save() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#22 Magento\Customer\Model\Customer\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#23 Magento\Customer\Model\Customer\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#24 Magento\Customer\Model\Customer\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Model/Customer/Interceptor.php:779]
+#25 Magento\Customer\Model\Customer\Interceptor->save() called at [vendor/magento/module-customer/Model/ResourceModel/CustomerRepository.php:257]
+#26 Magento\Customer\Model\ResourceModel\CustomerRepository->save() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#27 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#28 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-customer/Model/Plugin/CustomerRepository/TransactionWrapper.php:44]
+#29 Magento\Customer\Model\Plugin\CustomerRepository\TransactionWrapper->aroundSave() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#30 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#31 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Model/ResourceModel/CustomerRepository/Interceptor.php:23]
+#32 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->save() called at [vendor/magento/module-customer/Model/AccountManagement.php:952]
+#33 Magento\Customer\Model\AccountManagement->createAccountWithPasswordHash() called at [generated/code/Magento/Customer/Model/AccountManagement/Interceptor.php:104]
+#34 Magento\Customer\Model\AccountManagement\Interceptor->createAccountWithPasswordHash() called at [vendor/magento/module-customer/Model/AccountManagement.php:899]
+#35 Magento\Customer\Model\AccountManagement->createAccount() called at [generated/code/Magento/Customer/Model/AccountManagement/Interceptor.php:95]
+#36 Magento\Customer\Model\AccountManagement\Interceptor->createAccount() called at [vendor/magento/module-customer/Controller/Account/CreatePost.php:380]
+#37 Magento\Customer\Controller\Account\CreatePost->execute() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#38 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#39 Magento\Customer\Controller\Account\CreatePost\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-customer/Controller/Plugin/Account.php:64]
+#40 Magento\Customer\Controller\Plugin\Account->aroundExecute() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#41 Magento\Customer\Controller\Account\CreatePost\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#42 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Controller/Account/CreatePost/Interceptor.php:41]
+#43 Magento\Customer\Controller\Account\CreatePost\Interceptor->execute() called at [vendor/magento/framework/App/Action/Action.php:111]
+#44 Magento\Framework\App\Action\Action->dispatch() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#45 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#46 Magento\Customer\Controller\Account\CreatePost\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#47 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Controller/Account/CreatePost/Interceptor.php:50]
+#48 Magento\Customer\Controller\Account\CreatePost\Interceptor->dispatch() called at [vendor/magento/framework/App/FrontController.php:245]
+#49 Magento\Framework\App\FrontController->getActionResponse() called at [vendor/magento/framework/App/FrontController.php:212]
+#50 Magento\Framework\App\FrontController->processRequest() called at [vendor/magento/framework/App/FrontController.php:147]
+#51 Magento\Framework\App\FrontController->dispatch() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#52 Magento\Framework\App\FrontController\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#53 Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php:99]
+#54 Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#55 Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php:75]
+#56 Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#57 Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#58 Magento\Framework\App\FrontController\Interceptor->___callPlugins() called at [generated/code/Magento/Framework/App/FrontController/Interceptor.php:23]
+#59 Magento\Framework\App\FrontController\Interceptor->dispatch() called at [vendor/magento/framework/App/Http.php:116]
+#60 Magento\Framework\App\Http->launch() called at [generated/code/Magento/Framework/App/Http/Interceptor.php:23]
+#61 Magento\Framework\App\Http\Interceptor->launch() called at [vendor/magento/framework/App/Bootstrap.php:264]
+#62 Magento\Framework\App\Bootstrap->run() called at [pub/index.php:30]
+</pre> [] []
+[2023-04-04T10:16:46.647537+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Indexer/Model/Indexer/.
+Class Magento\Indexer\Model\Indexer\StateFactory generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-04T10:16:46.650691+00:00] main.CRITICAL: Exception message: Impossible to process constructor argument Parameter #4 [ <required> Magento\Indexer\Model\Indexer\StateFactory $stateFactory ] of Magento\Indexer\Model\Indexer class
+Trace: <pre>#1 Magento\Framework\ObjectManager\Definition\Runtime->getParameters() called at [vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php:48]
+#2 Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create() called at [vendor/magento/framework/ObjectManager/ObjectManager.php:56]
+#3 Magento\Framework\ObjectManager\ObjectManager->create() called at [vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:172]
+#4 Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument() called at [vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:276]
+#5 Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument() called at [vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:239]
+#6 Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime() called at [vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php:34]
+#7 Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments() called at [vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php:59]
+#8 Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create() called at [vendor/magento/framework/ObjectManager/ObjectManager.php:56]
+#9 Magento\Framework\ObjectManager\ObjectManager->create() called at [vendor/magento/framework/Indexer/IndexerRegistry.php:42]
+#10 Magento\Framework\Indexer\IndexerRegistry->get() called at [vendor/magento/module-customer/Model/Customer.php:321]
+#11 Magento\Customer\Model\Customer->getIndexer() called at [vendor/magento/module-customer/Model/Customer.php:1099]
+#12 Magento\Customer\Model\Customer->afterSave() called at [generated/code/Magento/Customer/Model/Customer/Interceptor.php:455]
+#13 Magento\Customer\Model\Customer\Interceptor->afterSave() called at [vendor/magento/module-eav/Model/Entity/VersionControl/AbstractEntity.php:94]
+#14 Magento\Eav\Model\Entity\VersionControl\AbstractEntity->save() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#15 Magento\Customer\Model\ResourceModel\Customer\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#16 Magento\Customer\Model\ResourceModel\Customer\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-checkout/Model/Plugin/RecollectQuoteOnCustomerGroupChange.php:77]
+#17 Magento\Checkout\Model\Plugin\RecollectQuoteOnCustomerGroupChange->aroundSave() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#18 Magento\Customer\Model\ResourceModel\Customer\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#19 Magento\Customer\Model\ResourceModel\Customer\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Model/ResourceModel/Customer/Interceptor.php:104]
+#20 Magento\Customer\Model\ResourceModel\Customer\Interceptor->save() called at [vendor/magento/framework/Model/AbstractModel.php:663]
+#21 Magento\Framework\Model\AbstractModel->save() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#22 Magento\Customer\Model\Customer\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#23 Magento\Customer\Model\Customer\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#24 Magento\Customer\Model\Customer\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Model/Customer/Interceptor.php:779]
+#25 Magento\Customer\Model\Customer\Interceptor->save() called at [vendor/magento/module-customer/Model/ResourceModel/CustomerRepository.php:257]
+#26 Magento\Customer\Model\ResourceModel\CustomerRepository->save() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#27 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#28 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-customer/Model/Plugin/CustomerRepository/TransactionWrapper.php:44]
+#29 Magento\Customer\Model\Plugin\CustomerRepository\TransactionWrapper->aroundSave() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#30 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#31 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Model/ResourceModel/CustomerRepository/Interceptor.php:23]
+#32 Magento\Customer\Model\ResourceModel\CustomerRepository\Interceptor->save() called at [vendor/magento/module-customer/Model/AccountManagement.php:952]
+#33 Magento\Customer\Model\AccountManagement->createAccountWithPasswordHash() called at [generated/code/Magento/Customer/Model/AccountManagement/Interceptor.php:104]
+#34 Magento\Customer\Model\AccountManagement\Interceptor->createAccountWithPasswordHash() called at [vendor/magento/module-customer/Model/AccountManagement.php:899]
+#35 Magento\Customer\Model\AccountManagement->createAccount() called at [generated/code/Magento/Customer/Model/AccountManagement/Interceptor.php:95]
+#36 Magento\Customer\Model\AccountManagement\Interceptor->createAccount() called at [vendor/magento/module-customer/Controller/Account/CreatePost.php:380]
+#37 Magento\Customer\Controller\Account\CreatePost->execute() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#38 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#39 Magento\Customer\Controller\Account\CreatePost\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-customer/Controller/Plugin/Account.php:64]
+#40 Magento\Customer\Controller\Plugin\Account->aroundExecute() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#41 Magento\Customer\Controller\Account\CreatePost\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#42 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Controller/Account/CreatePost/Interceptor.php:41]
+#43 Magento\Customer\Controller\Account\CreatePost\Interceptor->execute() called at [vendor/magento/framework/App/Action/Action.php:111]
+#44 Magento\Framework\App\Action\Action->dispatch() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#45 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#46 Magento\Customer\Controller\Account\CreatePost\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#47 Magento\Customer\Controller\Account\CreatePost\Interceptor->___callPlugins() called at [generated/code/Magento/Customer/Controller/Account/CreatePost/Interceptor.php:50]
+#48 Magento\Customer\Controller\Account\CreatePost\Interceptor->dispatch() called at [vendor/magento/framework/App/FrontController.php:245]
+#49 Magento\Framework\App\FrontController->getActionResponse() called at [vendor/magento/framework/App/FrontController.php:212]
+#50 Magento\Framework\App\FrontController->processRequest() called at [vendor/magento/framework/App/FrontController.php:147]
+#51 Magento\Framework\App\FrontController->dispatch() called at [vendor/magento/framework/Interception/Interceptor.php:58]
+#52 Magento\Framework\App\FrontController\Interceptor->___callParent() called at [vendor/magento/framework/Interception/Interceptor.php:138]
+#53 Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php:99]
+#54 Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#55 Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php:75]
+#56 Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch() called at [vendor/magento/framework/Interception/Interceptor.php:135]
+#57 Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}() called at [vendor/magento/framework/Interception/Interceptor.php:153]
+#58 Magento\Framework\App\FrontController\Interceptor->___callPlugins() called at [generated/code/Magento/Framework/App/FrontController/Interceptor.php:23]
+#59 Magento\Framework\App\FrontController\Interceptor->dispatch() called at [vendor/magento/framework/App/Http.php:116]
+#60 Magento\Framework\App\Http->launch() called at [generated/code/Magento/Framework/App/Http/Interceptor.php:23]
+#61 Magento\Framework\App\Http\Interceptor->launch() called at [vendor/magento/framework/App/Bootstrap.php:264]
+#62 Magento\Framework\App\Bootstrap->run() called at [pub/index.php:30]
+</pre> [] []
+[2023-04-04T10:59:40.155797+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Store/Console/Command/StoreListCommand/.
+Class Magento\Store\Console\Command\StoreListCommand\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T08:42:17.652621+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:42:17.724718+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:42:17.787247+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:42:18.138528+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:42:18.238108+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:42:18.298934+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:42:27.786011+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 3334; Allocated memory size: 40008000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:48:25.641831+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:48:25.719907+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:48:25.809392+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:48:26.131113+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:48:26.236310+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:48:26.304194+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:48:35.761497+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 3334; Allocated memory size: 40008000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:56:30.391042+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:56:30.459874+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:56:30.518057+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:56:30.782604+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:56:30.876919+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:56:30.937813+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T08:56:40.212936+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 3334; Allocated memory size: 40008000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:19:21.018176+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:19:37.166794+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:20:56.424332+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:21:00.590597+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:21:01.737498+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:21:01.899269+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:21:02.071493+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:21:03.024841+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:21:03.251348+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:21:03.685260+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:22:14.104939+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:23:47.658442+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Store/Console/Command/StoreListCommand/.
+Class Magento\Store\Console\Command\StoreListCommand\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:23:50.710226+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Store/Console/Command/StoreListCommand/.
+Class Magento\Store\Console\Command\StoreListCommand\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:24:28.487515+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:24:30.605526+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:24:31.173415+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:24:31.428896+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:24:31.556979+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:24:31.747273+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:25:43.750224+00:00] main.CRITICAL: The specified "/var/www/html/magento2./generated/code/Magento/Framework/App/Http/Interceptor.php.183669" file couldn't be written. Warning!file_put_contents(/var/www/html/magento2./generated/code/Magento/Framework/App/Http/Interceptor.php.183669): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:25:43.875741+00:00] main.CRITICAL: The specified "/var/www/html/magento2./generated/code/Magento/Framework/App/Http/Interceptor.php.61374" file couldn't be written. Warning!file_put_contents(/var/www/html/magento2./generated/code/Magento/Framework/App/Http/Interceptor.php.61374): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:25:48.780888+00:00] main.CRITICAL: The specified "/var/www/html/magento2./generated/code/Magento/Framework/App/Http/Interceptor.php.58502" file couldn't be written. Warning!file_put_contents(/var/www/html/magento2./generated/code/Magento/Framework/App/Http/Interceptor.php.58502): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:25:48.864354+00:00] main.CRITICAL: The specified "/var/www/html/magento2./generated/code/Magento/Framework/App/Http/Interceptor.php.57656" file couldn't be written. Warning!file_put_contents(/var/www/html/magento2./generated/code/Magento/Framework/App/Http/Interceptor.php.57656): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:28:02.217341+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:29:34.273734+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:29:34.440556+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:30:29.264154+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:30:30.067444+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:30:45.196881+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:30:45.400462+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:32:21.458949+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:32:21.589644+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:32:22.639319+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:32:22.771312+00:00] main.ERROR: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Htc_Training schema: current version - none, required version - 1.0.0
+Htc_Training data: current version - none, required version - 1.0.0 [] []
+[2023-04-05T09:32:30.584698+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Backend/Console/Command/CacheEnableCommand/.
+Class Magento\Backend\Console\Command\CacheEnableCommand\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:32:34.856698+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Backend/Console/Command/CacheEnableCommand/.
+Class Magento\Backend\Console\Command\CacheEnableCommand\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:47:27.799774+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:47:27.882700+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:47:27.947444+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:47:28.237423+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:47:28.341238+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:47:28.397971+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:47:34.715478+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 3334; Allocated memory size: 40008000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:48:55.706195+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:48:55.786093+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:48:55.842658+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:48:56.129678+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:48:56.226796+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:48:56.287858+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:49:05.640803+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 3334; Allocated memory size: 40008000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T09:49:16.641422+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:49:39.421603+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:49:39.544805+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T09:54:43.006228+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T09:54:43.006925+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T09:54:43.007296+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T09:54:43.007563+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T09:54:43.007839+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T09:54:43.008076+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:13:38.181428+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:13:38.182150+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:13:38.182461+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:13:38.182742+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:13:38.183049+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:13:38.183309+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:14:42.088940+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T10:14:42.185822+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T10:14:43.722958+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:14:43.796307+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:14:43.853089+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:14:44.180591+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:14:44.264796+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:14:44.290557+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T10:14:44.339539+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:14:44.383471+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T10:14:45.882623+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T10:14:45.966123+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T10:14:53.389361+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 3334; Allocated memory size: 40008000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:14:57.747004+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T10:14:57.836049+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T10:14:58.638732+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T10:14:58.715419+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T10:16:29.891212+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:16:29.891590+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:16:29.891898+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:16:29.892159+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:16:29.892399+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:16:29.892690+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:20:16.423548+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:20:16.423903+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:20:16.424213+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:22:14.319029+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Theme/Model/Theme/Data/Collection/.
+Class Magento\Theme\Model\Theme\Data\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T10:24:17.907058+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:24:17.975884+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:24:18.032473+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:24:18.294247+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:24:18.392797+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:24:18.449324+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:24:27.372801+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 3334; Allocated memory size: 40008000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:24:39.231073+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T10:24:39.310046+00:00] main.CRITICAL: Can't create directory /var/www/html/magento2./generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2023-04-05T10:25:46.302596+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:25:46.371902+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:25:46.432492+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:25:46.771296+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:25:46.854546+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:25:46.911829+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:25:56.179905+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 3334; Allocated memory size: 40008000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:28:00.439089+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:28:00.439455+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:28:00.439765+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:29:06.466695+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:29:06.534405+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:29:06.592536+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:29:06.907298+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:29:06.997353+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:29:07.054633+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:29:16.236496+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 3334; Allocated memory size: 40008000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:29:29.116747+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:29:29.117108+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:29:29.117440+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:30:24.008262+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:30:24.071222+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:30:24.127499+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:30:24.370680+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:30:24.442310+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:30:24.498453+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:30:33.642195+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 3334; Allocated memory size: 40008000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2023-04-05T10:30:47.976899+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:30:47.977271+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T10:30:47.977586+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T11:08:40.826791+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T11:08:40.827784+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-04-05T11:08:40.828221+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
