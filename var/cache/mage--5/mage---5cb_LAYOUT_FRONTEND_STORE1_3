@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1680751508;s:6:"expire";i:1712287508;s:4:"tags";s:37:"5cb_LAYOUT_GENERAL_CACHE_TAG,5cb_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1680775924;s:6:"expire";i:1712311924;s:4:"tags";s:37:"5cb_LAYOUT_GENERAL_CACHE_TAG,5cb_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -6920,7 +6920,16 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1680751508;s:6:"expire";i:1712287508;s:4:"t
       <block class="Magento\Wishlist\Block\Share\Wishlist" name="customer.wishlist" template="Magento_Wishlist::shared.phtml" cacheable="false"/>
    </referenceContainer>
 </body>
-</handle><handle id="htctraining_index_index" layout="1column"><referenceContainer name="content">
+</handle><handle id="default"><referenceContainer name="footer-container">
+   <block class="Htc\Training\Block\Footer" name="footer_print" template="Htc_Training::footer_test.phtml"/>
+</referenceContainer>
+</handle><handle id="htctraining_index_index" layout="1column"><referenceContainer name="header.panel.wrapper">
+   <container name="header.containertwo" as="header_containertwo" label="Page Header Container" htmlTag="header" htmlClass="header-mini-container" after="header.panel.wrapper"/>
+</referenceContainer>
+<referenceContainer name="header.containertwo">
+   <block class="Magento\Framework\View\Element\Template" name="header.mini.container" template="Htc_Training::header_test.phtml"/>
+</referenceContainer>
+<referenceContainer name="content">
    <block class="Htc\Training\Block\Index" name="htctraining_index_index" template="Htc_Training::index.phtml"/>
 </referenceContainer>
 </handle><handle id="braintree_googlepay_review" layout="1column"><head>
