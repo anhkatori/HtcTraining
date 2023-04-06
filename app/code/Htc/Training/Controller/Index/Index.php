@@ -4,22 +4,21 @@ namespace Htc\Training\Controller\Index;
 class Index extends \Magento\Framework\App\Action\Action
 {
 	protected $_pageFactory;
-    protected $moduleManager;
 
 	public function __construct(
 		\Magento\Framework\App\Action\Context $context,
 		\Magento\Framework\View\Result\PageFactory $pageFactory,
-        \Magento\Framework\Module\Manager $moduleManager,
+		\Htc\Training\Helper\Data $helperData
         )
 	{
-        $this->moduleManager = $moduleManager;
 		$this->_pageFactory = $pageFactory;
+		$this->helperData = $helperData;
 		return parent::__construct($context);
 	}
 
 	public function execute()
 	{
-        if ($this->moduleManager->isOutputEnabled('Htc_Training')) {
+        if ($this->helperData->getGeneralConfig('enable')=="1") {
             return $this->_pageFactory->create();
         } else {
             $this->_redirect('home');
