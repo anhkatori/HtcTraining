@@ -1,16 +1,23 @@
 <?xml version="1.0"?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    
+<page layout="2columns-left"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
     <referenceContainer name="header.panel.wrapper">
-        <container name="header.containertwo" as="header_containertwo" label="Page Header Container"  htmlTag="header" htmlClass="header-mini-container" after="header.panel.wrapper"/>
+        <container name="header.containertwo" as="header_containertwo" label="Page Header Container" htmlTag="header" htmlClass="header-mini-container" after="header.panel.wrapper"/>
     </referenceContainer>
 
-    <referenceContainer name="header.containertwo">
-        <block class="Magento\Framework\View\Element\Template" name="header.mini.container" template="Htc_Training::header_test.phtml"/>
+    <referenceContainer name="header-wrapper">
+        <block class="Htc\Training\Block\Head" name="htctraining_head_index" template="Htc_Training::head.phtml" />
+    </referenceContainer>
+
+    <referenceContainer name="sidebar.main">
+        <block before="-" class="Htc\Training\Block\Left" name="htcleft_left_index" template="Htc_Training::left.phtml" />
     </referenceContainer>
 
     <referenceContainer name="content">
-        <block class="Htc\Training\Block\Index" name="htctraining_index_index" template="Htc_Training::index.phtml" />
+        <block class="Htc\Training\Block\Right" name="htctraining_right_index" template="Htc_Training::right.phtml" />
     </referenceContainer>
 
+    <referenceBlock name="catalog.compare.link" remove="true"/>
+    <referenceBlock name="catalog.compare.sidebar" remove="true"/>
 </page>
