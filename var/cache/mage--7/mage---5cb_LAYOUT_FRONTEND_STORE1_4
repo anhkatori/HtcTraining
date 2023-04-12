@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1681188111;s:6:"expire";i:1712724111;s:4:"tags";s:37:"5cb_LAYOUT_GENERAL_CACHE_TAG,5cb_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1681290403;s:6:"expire";i:1712826403;s:4:"tags";s:37:"5cb_LAYOUT_GENERAL_CACHE_TAG,5cb_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -6920,6 +6920,15 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1681188111;s:6:"expire";i:1712724111;s:4:"t
       <block class="Magento\Wishlist\Block\Share\Wishlist" name="customer.wishlist" template="Magento_Wishlist::shared.phtml" cacheable="false"/>
    </referenceContainer>
 </body>
+</handle><handle id="htcbt4_index_index" layout="2columns-left"><head>
+   <css src="Htc_Bt4::custom.css"/>
+</head>
+<referenceContainer name="content">
+   <block class="Htc\Bt4\Block\Index" name="htcbt4_index_index" template="Htc_Bt4::index.phtml"/>
+</referenceContainer>
+<referenceBlock name="catalog.compare.link" remove="true"/>
+<referenceBlock name="catalog.compare.sidebar" remove="true"/>
+<referenceContainer name="footer" remove="true"/>
 </handle><handle id="htctraining_index_index" layout="2columns-left"><referenceContainer name="header.panel.wrapper">
    <container name="header.containertwo" as="header_containertwo" label="Page Header Container" htmlTag="header" htmlClass="header-mini-container" after="header.panel.wrapper"/>
 </referenceContainer>
