@@ -63,7 +63,6 @@ define([
             var self = this;
             self.staffs([]);
             let dropdown = JSON.parse(localStorage.getItem("dropdown") || "[]");
-            console.log(dropdown);
             _.each(dropdown, function (dropdownValue, key) {
                 var value = dropdownValue.value;
 
@@ -79,10 +78,22 @@ define([
                 if (value) {
                     let staff = dropdown.filter(x => x.value == value);
                     $('#show').html(staff[0].name + ', ' + staff[0].age + ' tuoi, nghe nghiep ' + staff[0].job);
+                    $('#delete').show();
+                    $('#delete').attr('val', value);
                 } else {
                     $('#show').html('&nbsp;');
+                    $('#delete').hide();
                 }
             });
+        },
+        deleteStaff: function () {
+            let value = $('#delete').attr('val');
+            let dropdown = JSON.parse(localStorage.getItem("dropdown") || "[]");
+            dropdown = dropdown.filter(function (obj) {
+                return obj.value !== value;
+            });
+            localStorage.setItem('dropdown', JSON.stringify(dropdown));
+            this.dropdown();
         }
     });
 });

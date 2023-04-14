@@ -1,22 +1,21 @@
-<div id="select-staff" data-bind="scope: 'staffs'">
-    <select style="width:45%; float:left; margin-right:5%" data-bind="options: staffs,
+<div class="button" id="select-staff" data-bind="scope: 'staffs'">
+    <select data-bind="options: staffs,
                        optionsText: 'label',
                        optionsValue: 'value',
+                       optionsIncludeDestroyed: true,
                        optionsCaption: 'Choose staff name...', value: selectedItem" name="dropdown">
     </select>
     <span id="show">&nbsp;</span>
+    <button id="delete" style="display:none" val="" data-bind="click: deleteStaff">Delete</button>
 </div>
-<div style="margin-top:50px" data-bind="scope: 'staffs'">
+<div class="button" data-bind="scope: 'staffs'">
     <button id="add" data-bind="click: showForm">Add</button>
 </div>
-<div data-bind="scope: 'staffs'" id="form" style="margin-top:50px; display:none">
-    <label style="display: inline-block;width: 10%;">Name : </label><input value='' id='name'
-        data-bind="value: input_name"> <br>
-    <label style="display: inline-block;width: 10%;">Age : </label><input value='' id='age'
-        data-bind="value: input_age"> <br>
-    <label style="display: inline-block;width: 10%;">Job : </label><input value='' id='job'
-        data-bind="value: input_job">
-    <div style="margin-top:50px">
+<div data-bind="scope: 'staffs'" id="form">
+    <label>Name : </label><input value='' id='name' data-bind="value: input_name"> <br>
+    <label>Age : </label><input value='' id='age' data-bind="value: input_age"> <br>
+    <label>Job : </label><input value='' id='job' data-bind="value: input_job">
+    <div class="button">
         <button id="save" data-bind="click: saveForm">Save</button>
     </div>
 </div>
