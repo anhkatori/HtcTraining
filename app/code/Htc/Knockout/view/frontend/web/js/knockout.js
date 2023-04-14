@@ -52,16 +52,18 @@ define([
         },
         saveForm: function () {
             var self = this;
-            let staff = { name: self.input_name(), age: self.input_age(), job: self.input_job() };
             let staff_list = JSON.parse(localStorage.getItem("dropdown") || "[]");
+            let value = staff_list.length.toString();
+            let staff = { value: value, name: self.input_name(), age: self.input_age(), job: self.input_job() };
             staff_list.push(staff);
             localStorage.setItem('dropdown', JSON.stringify(staff_list));
             this.dropdown();
         },
         dropdown: function () {
             var self = this;
-            self.staffs.removeAll();
+            self.staffs([]);
             let dropdown = JSON.parse(localStorage.getItem("dropdown") || "[]");
+            console.log(dropdown);
             _.each(dropdown, function (dropdownValue, key) {
                 var value = dropdownValue.value;
 
@@ -73,6 +75,7 @@ define([
                 self.staffs.push(option);
             });
             self.selectedItem.subscribe(function (value) {
+                let dropdown = JSON.parse(localStorage.getItem("dropdown") || "[]");
                 if (value) {
                     let staff = dropdown.filter(x => x.value == value);
                     $('#show').html(staff[0].name + ', ' + staff[0].age + ' tuoi, nghe nghiep ' + staff[0].job);
