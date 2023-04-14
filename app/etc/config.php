@@ -347,6 +347,7 @@ return [
         'Magento_WishlistGraphQl' => 1,
         'Magento_WishlistSampleData' => 1,
         'Htc_Bt4' => 1,
+        'Htc_Event' => 1,
         'Htc_Knockout' => 1,
         'Htc_Training' => 1,
         'PayPal_Braintree' => 1,
