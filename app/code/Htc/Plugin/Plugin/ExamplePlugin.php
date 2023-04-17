@@ -33,9 +33,9 @@ class ExamplePlugin
 		$newMess =  $this->text.'  '. $message;
 		return $proceed($newMess, $group);
 	}
-    public function aroundAddMessage($subject, callable $proceed, $message , $group = null)
-	{
-        $message->setText('ddd');
-		return $proceed($message, $group);
-	}
+    // public function aroundAddMessage($subject, callable $proceed, $message , $group = null)
+	// {
+    //     $message->setText($this->text.'  '. $message->getText());
+	// 	return $proceed($message, $group);
+	// }
 }
