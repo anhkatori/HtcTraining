@@ -349,6 +349,7 @@ return [
         'Htc_Bt4' => 1,
         'Htc_Event' => 1,
         'Htc_Knockout' => 1,
+        'Htc_Plugin' => 1,
         'Htc_Training' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,

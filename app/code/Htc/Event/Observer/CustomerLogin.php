@@ -5,27 +5,22 @@ namespace Htc\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
 
 class CustomerLogin implements ObserverInterface
-{ /**
-     * @var \Magento\Framework\App\Http\Context
-  */
+{
     protected $_messageManager;
-    protected $_context;
-
-    /**
-     * Add constructor.
-     * @param \Magento\Framework\App\Http\Context $context
-     */
-    public function __construct(\Magento\Framework\Message\ManagerInterface $messageManager, \Magento\Framework\App\Http\Context $context)
+    protected $dataHelper;
+    public function __construct(\Magento\Framework\Message\ManagerInterface $messageManager, \Htc\Event\Helper\Data $dataHelper)
     {
         $this->_messageManager = $messageManager;
-        $this->_context = $context;
+        $this->dataHelper = $dataHelper;
     }
 
     public function execute(\Magento\Framework\Event\Observer $observer)
     {
-        if (!$this->_context->getValue(\Magento\Customer\Model\Context::CONTEXT_AUTH)){
-            echo"aaa";
-            $this->_messageManager->addSuccess("Logged in");
+        $helper = $this->dataHelper;
+        $text = $helper->getConfig('event/general_event/display_text');
+        if ($observer->getData('customer')) {
+            $this->_messageManager->addSuccess($text);
         }
+        
     }
 }

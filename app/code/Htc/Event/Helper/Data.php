@@ -10,16 +10,17 @@ class Data extends AbstractHelper
 
 	const XML_PATH_EVENT = 'event/';
 
-	public function getConfigValue($field, $storeId = null)
+	public function getConfig($config_path)
 	{
 		return $this->scopeConfig->getValue(
-			$field, ScopeInterface::SCOPE_STORE, $storeId
+			$config_path,
+				\Magento\Store\Model\ScopeInterface::SCOPE_STORE
 		);
 	}
 
 	public function getGeneralConfig($code, $storeId = null)
 	{
-		return $this->getConfigValue(self::XML_PATH_EVENT .'general/'. $code, $storeId);
+		return $this->getConfigValue(self::XML_PATH_EVENT . 'general/' . $code, $storeId);
 	}
 
 }

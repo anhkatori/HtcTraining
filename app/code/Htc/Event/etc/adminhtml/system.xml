@@ -19,6 +19,10 @@
                     <label>Text in message</label>
                     <comment>Text in message</comment>
                 </field>
+                <field id="price" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Price</label>
+                    <comment>Price for all products</comment>
+                </field>
             </group>
         </section>
     </system>
