@@ -6,7 +6,7 @@
         </tab>
         <section id="event" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>separator-top</class>
-            <label>Login Event</label>
+            <label>Event</label>
             <tab>htc</tab>
             <resource>Htc_Event::event_config</resource>
             <group id="general_event" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
@@ -16,8 +16,8 @@
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
                 <field id="display_text" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
-                    <label>Text in message</label>
-                    <comment>Text in message</comment>
+                    <label>Text in message after login</label>
+                    <comment>Text in message after login</comment>
                 </field>
                 <field id="price" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Price</label>
