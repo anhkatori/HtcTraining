@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="customer_login">
+        <observer name="customer_login_observer" instance="Htc\Event\Observer\CustomerLogin" />
+    </event>
+    <event name="checkout_cart_product_add_after">
+        <observer name="custom_checkout_price" instance="Htc\Event\Observer\CustomCheckoutPrice" />
+    </event>
+    <event name="catalog_product_collection_load_after">
+        <observer name="custom_price" instance="Htc\Event\Observer\CustomPrice" />
+    </event>
+    <event name="catalog_controller_product_view">
+        <observer name="custom_detail_price" instance="Htc\Event\Observer\CustomDetailPrice" />
+    </event>
+</config>

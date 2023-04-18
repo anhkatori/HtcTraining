@@ -1,0 +1,35 @@
+<div class="button" id="select-staff" data-bind="scope: 'staffs'">
+    <select data-bind="options: staffs,
+                       optionsText: 'label',
+                       optionsValue: 'value',
+                       optionsIncludeDestroyed: true,
+                       optionsCaption: 'Choose staff name...', value: selectedItem" name="dropdown">
+    </select>
+    <span id="show">&nbsp;</span>
+    <button id="delete" style="display:none" val="" data-bind="click: deleteStaff">Delete</button>
+</div>
+<div class="button" data-bind="scope: 'staffs'">
+    <button id="add" data-bind="click: showForm">Add</button>
+</div>
+<div data-bind="scope: 'staffs'" id="form">
+    <label>Name : </label><input value='' id='name' data-bind="value: input_name"> <br>
+    <label>Age : </label><input value='' id='age' data-bind="value: input_age"> <br>
+    <label>Job : </label><input value='' id='job' data-bind="value: input_job">
+    <div class="button">
+        <button id="save" data-bind="click: saveForm">Save</button>
+    </div>
+</div>
+
+<script type="text/x-magento-init">
+{
+    "#select-staff": {
+        "Magento_Ui/js/core/app": {
+           "components": {
+                "staffs": {
+                    "component": "Htc_Knockout/js/knockout"
+                }
+            }
+        }
+    }
+}
+</script>

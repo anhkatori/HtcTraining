@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page layout="2columns-left"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Htc_Bt4::custom.css"/>
+    </head>
+    <referenceContainer name="content">
+        <block class="Htc\Bt4\Block\Index" name="htcbt4_index_index" template="Htc_Bt4::index.phtml" />
+    </referenceContainer>
+    <referenceBlock name="catalog.compare.link" remove="true"/>
+    <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+    <referenceContainer name="footer" remove="true" />
+</page>
