@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="admin">
-        <route id="htc_resourceModel" frontName="htc_resourceModel">
+        <route id="posts" frontName="posts">
             <module name="Htc_ResourceModel"/>
         </route>
     </router>

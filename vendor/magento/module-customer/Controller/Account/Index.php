@@ -36,7 +36,6 @@ class Index extends \Magento\Customer\Controller\AbstractAccount implements Http
      */
     public function execute()
     {
-        $this->messageManager->addSuccessMessage(__('You saved the address.'));
         return $this->resultPageFactory->create();
     }
 }

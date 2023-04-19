@@ -2,6 +2,6 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
         <add id="Htc_ResourceModel::posts" title="Manager Post" module="Htc_ResourceModel" sortOrder="10" resource="Htc_ResourceModel::post" />
-        <add id="Htc_ResourceModel::posts_item" title="Post List" module="Htc_ResourceModel" sortOrder="10" parent="Htc_ResourceModel::posts" action="htc_resourceModel/post/index" resource="Htc_ResourceModel::post_item" />
+        <add id="Htc_ResourceModel::posts_item" title="Post List" module="Htc_ResourceModel" sortOrder="10" parent="Htc_ResourceModel::posts" action="posts/post/index" resource="Htc_ResourceModel::post_item" />
     </menu>
 </config>
