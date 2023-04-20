@@ -8,8 +8,8 @@ class Collection extends AbstractCollection
     protected function _construct()
     {
         $this->_init(
-            'Htc\ResourceModel\Model\Posts',
-            'Htc\ResourceModel\Model\ResourceModel\Posts'
+            Htc\ResourceModel\Model\Posts::class,
+            Htc\ResourceModel\Model\ResourceModel\Posts::class
         );
     }
 }

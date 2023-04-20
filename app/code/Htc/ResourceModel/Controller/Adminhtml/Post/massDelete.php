@@ -1,62 +1,41 @@
 <?php
-
 namespace Htc\ResourceModel\Controller\Adminhtml\Post;
 
-use Exception;
-use Magento\Backend\App\Action;
-use Magento\Framework\Controller\ResultFactory;
-use Magento\Backend\App\Action\Context;
-use Htc\ResourceModel\Model\ResourceModel\Posts\Collection as Posts;
-
-/**
- * Class MassDelete
- *
- * @package Htc\ResourceModel\Controller\Adminhtml\Post
- */
-class MassDelete extends Action
+class MassDelete extends \Magento\Backend\App\Action
 {
 
-    /**
-     * @var Posts
-     */
-    protected $post;
+    protected $_filter;
 
+    protected $_collectionFactory;
 
-    /**
-     * @param Context $context
-     * @param Posts $post
-     */
-    public function __construct(Context $context, Posts $post)
-    {
+    protected $postFactory;
+
+    public function __construct(
+        \Magento\Ui\Component\MassAction\Filter $filter,
+        \Htc\ResourceModel\Model\ResourceModel\Posts\CollectionFactory $collectionFactory,
+        \Htc\ResourceModel\Model\PostsFactory $postFactory,
+        \Magento\Backend\App\Action\Context $context
+    ) {
+        $this->_filter = $filter;
+        $this->_collectionFactory = $collectionFactory;
+        $this->postFactory = $postFactory;
         parent::__construct($context);
-        $this->post = $post;
     }
 
-    /**
-     * Execute action
-     *
-     * @return \Magento\Backend\Model\View\Result\Redirect
-     */
     public function execute()
     {
-        $selectedIds = $this->getRequest()->getParams()['selected'];
-        if (!is_array($selectedIds)) {
-            $this->messageManager->addErrorMessage(__('Please select one or more post.'));
-        } else {
-            try {
-                $collectionSize = count($selectedIds);
-                foreach ($selectedIds as $_id) {
-                    $post = $this->post->getItems()[$_id];
-                    $post->delete();
-                }
-                $this->messageManager->addSuccessMessage(__('A total of %1 record(s) have been deleted.', $collectionSize));
-            } catch (Exception $e) {
-                $this->messageManager->addErrorMessage($e->getMessage());
+        try {
+            $logCollection = $this->_filter->getCollection($this->_collectionFactory->create());
+            foreach ($logCollection as $item) {
+                $post_items = $this->postFactory->create();
+                $post_items->load($item->getId());
+                $post_items->delete();
             }
+            $this->messageManager->addSuccess(__('Deleted ' . count($logCollection) . ' item(s) successfully.'));
+        } catch (Exception $e) {
+            $this->messageManager->addError($e->getMessage());
         }
-
-        /** @var \Magento\Backend\Model\View\Result\Redirect $resultRedirect */
-        $resultRedirect = $this->resultFactory->create(ResultFactory::TYPE_REDIRECT);
+        $resultRedirect = $this->resultRedirectFactory->create();
         return $resultRedirect->setPath('*/*/');
     }
 }
