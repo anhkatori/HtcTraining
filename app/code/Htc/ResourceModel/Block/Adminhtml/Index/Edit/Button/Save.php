@@ -28,54 +28,6 @@ class Save extends Generic implements ButtonProviderInterface
                 ],
             ],
             'class_name' => Container::SPLIT_BUTTON,
-            'options' => $this->getOptions(),
         ];
-    }
-    /**
-     * Retrieve options
-     *
-     * @return array
-     */
-    protected function getOptions()
-    {
-        $options[] = [
-            'id_hard' => 'save_and_new',
-            'label' => __('Save & New'),
-            'data_attribute' => [
-                'mage-init' => [
-                    'buttonAdapter' => [
-                        'actions' => [
-                            [
-                                'targetName' => 'htc_resourceModel_form.htc_resourceModel_form',
-                                'actionName' => 'save',
-                                'params' => [
-                                    true, [
-                                        'back' => 'add',
-                                    ],
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-            ],
-        ];
-        $options[] = [
-            'id_hard' => 'save_and_close',
-            'label' => __('Save & Close'),
-            'data_attribute' => [
-                'mage-init' => [
-                    'buttonAdapter' => [
-                        'actions' => [
-                            [
-                                'targetName' => 'htc_resourceModel_form.htc_resourceModel_form',
-                                'actionName' => 'save',
-                                'params' => [true],
-                            ],
-                        ],
-                    ],
-                ],
-            ],
-        ];
-        return $options;
     }
 }

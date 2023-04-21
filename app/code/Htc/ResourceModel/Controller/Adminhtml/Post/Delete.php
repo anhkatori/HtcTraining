@@ -1,6 +1,8 @@
 <?php
-namespace Htc\ResourceModel\Controller\Adminhtml\Index;
+namespace Htc\ResourceModel\Controller\Adminhtml\Post;
+
 use Magento\Backend\App\Action;
+
 class Delete extends Action
 {
     /**
@@ -8,28 +10,19 @@ class Delete extends Action
      */
     protected $modelPost;
     /**
-     * @param Context                  $context
      * @param \Htc\ResourceModel\Model\Posts $postFactory
      */
     public function __construct(
-        Context $context,
+        \Magento\Backend\App\Action\Context $context,
         \Htc\ResourceModel\Model\Posts $postFactory
     ) {
         parent::__construct($context);
         $this->modelPost = $postFactory;
     }
-    /**
-     * {@inheritdoc}
-     */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Htc_ResourceModel::index_delete');
+        return $this->_authorization->isAllowed('Htc_ResourceModel::post_delete');
     }
-    /**
-     * Delete action
-     *
-     * @return \Magento\Framework\Controller\ResultInterface
-     */
     public function execute()
     {
         $id = $this->getRequest()->getParam('post_id');
@@ -37,14 +30,14 @@ class Delete extends Action
         $resultRedirect = $this->resultRedirectFactory->create();
         if ($id) {
             try {
-                $model = $this->modelBlog;
+                $model = $this->modelPost;
                 $model->load($id);
                 $model->delete();
                 $this->messageManager->addSuccess(__('Record deleted successfully.'));
                 return $resultRedirect->setPath('*/*/');
             } catch (\Exception $e) {
                 $this->messageManager->addError($e->getMessage());
-                return $resultRedirect->setPath('*/*/edit', ['id' => $id]);
+                return $resultRedirect->setPath('*/*/');
             }
         }
         $this->messageManager->addError(__('Record does not exist.'));

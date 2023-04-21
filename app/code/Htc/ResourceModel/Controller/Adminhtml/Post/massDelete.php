@@ -25,13 +25,13 @@ class MassDelete extends \Magento\Backend\App\Action
     public function execute()
     {
         try {
-            $logCollection = $this->_filter->getCollection($this->_collectionFactory->create());
-            foreach ($logCollection as $item) {
+            $collection = $this->_filter->getCollection($this->_collectionFactory->create());
+            foreach ($collection as $item) {
                 $post_items = $this->postFactory->create();
                 $post_items->load($item->getId());
                 $post_items->delete();
             }
-            $this->messageManager->addSuccess(__('Deleted ' . count($logCollection) . ' item(s) successfully.'));
+            $this->messageManager->addSuccess(__('Deleted ' . count($collection) . ' item(s) successfully.'));
         } catch (Exception $e) {
             $this->messageManager->addError($e->getMessage());
         }

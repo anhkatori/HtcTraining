@@ -1,0 +1,55 @@
+<?php $_gridrecords = $block->getCollection(); ?>
+<?php if ($_gridrecords && count($_gridrecords)): ?>
+    <div class="table-wrapper orders-history">
+        <table class="data table table-order-items history" id="my-orders-table">
+            <caption class="table-caption">
+                <?php echo __('Grid Record') ?>
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col" class="col id">
+                        <?php echo __('ID #') ?>
+                    </th>
+                    <th scope="col" class="col name">
+                        <?php echo __('Name') ?>
+                    </th>
+                    <th scope="col" class="col content">
+                        <?php echo __('Content') ?>
+                    </th>
+                    <th scope="col" class="col created_at">
+                        <?php echo __('Created At') ?>
+                    </th>
+                    <th scope="col" class="col ">&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                foreach ($_gridrecords as $_gridrecord): ?>
+                    <tr>
+                        <td class="col id">
+                            <?php echo $_gridrecord->getId() ?>
+                        </td>
+                        <td class="col name">
+                            <?php echo $_gridrecord->getName() ?>
+                        </td>
+                        <td class="col content">
+                            <?php echo $_gridrecord->getContent() ?>
+                        </td>
+                        <td class="col created_at">
+                            <?php echo $_gridrecord->getCreated_at() ?>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+    <?php if ($block->getPagerHtml()): ?>
+        <div class="order-products-toolbar toolbar bottom">
+            <?php echo $block->getPagerHtml(); ?>
+        </div>
+    <?php endif ?>
+<?php else: ?>
+    <div class="message info empty"><span>
+            <?php echo __('grid records not available.'); ?>
+        </span></div>
+<?php endif ?>

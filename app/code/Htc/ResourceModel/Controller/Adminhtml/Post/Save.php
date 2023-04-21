@@ -1,5 +1,5 @@
 <?php
-namespace Htc\ResourceModel\Controller\Adminhtml\Index;
+namespace Htc\ResourceModel\Controller\Adminhtml\Post;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\Model\Session;
@@ -48,13 +48,6 @@ class Save extends \Magento\Backend\App\Action
                 $this->model->save();
                 $this->messageManager->addSuccess(__('The data has been saved.'));
                 $this->adminsession->setFormData(false);
-                if ($this->getRequest()->getParam('back')) {
-                    if ($this->getRequest()->getParam('back') == 'add') {
-                        return $resultRedirect->setPath('*/*/add');
-                    } else {
-                        return $resultRedirect->setPath('*/*/edit', ['post_id' => $this->model->getPostsId(), '_current' => true]);
-                    }
-                }
                 return $resultRedirect->setPath('*/*/');
             } catch (\Magento\Framework\Exception\LocalizedException $e) {
                 $this->messageManager->addError($e->getMessage());

@@ -1,9 +1,10 @@
 <?php
 namespace Htc\ResourceModel\Ui\Component\Listing\Column;
+
 class PostActions extends \Magento\Ui\Component\Listing\Columns\Column
 {
-    const URL_EDIT_PATH = 'resourceModel/index/edit';
-    const URL_DELETE_PATH = 'resourceModel/index/delete';
+    const URL_EDIT_PATH = 'posts/post/edit';
+    const URL_DELETE_PATH = 'posts/post/delete';
     /*
      * @var \Magento\Framework\UrlInterface
      */

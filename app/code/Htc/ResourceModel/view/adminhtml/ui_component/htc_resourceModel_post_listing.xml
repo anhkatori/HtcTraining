@@ -32,8 +32,6 @@
         </argument>
     </dataSource>
     <listingToolbar name="listing_top">
-        <bookmark name="bookmarks"/>
-        <filterSearch name="fulltext"/>
         <filters name="listing_filters"/>
         <massaction name="listing_massaction">
             <argument name="data" xsi:type="array">
@@ -113,5 +111,15 @@
                 </item>
             </argument>
         </column>
+        <actionsColumn name="actions" class="Htc\ResourceModel\Ui\Component\Listing\Column\PostActions">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="resizeEnabled" xsi:type="boolean">false</item>
+                    <item name="resizeDefaultWidth" xsi:type="string">107</item>
+                    <item name="indexField" xsi:type="string">post_id</item>
+                    <item name="sortOrder" xsi:type="number">180</item>
+                </item>
+            </argument>
+        </actionsColumn>
     </columns>
 </listing>
