@@ -19,15 +19,6 @@ class Index extends \Magento\Framework\View\Element\Template
     protected function _prepareLayout()
     {
         parent::_prepareLayout();
-        if ($this->getCollection()) {
-            $pager = $this->getLayout()->createBlock(
-                'Magento\Theme\Block\Html\Pager',
-                'htc.resourceModel.record.pager'
-            )->setCollection(
-                    $this->getCollection()
-                );
-            $this->setChild('pager', $pager);
-        }
         return $this;
     }
 
